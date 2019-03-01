@@ -1,0 +1,26 @@
+.container {
+  padding: 10px;
+}
+
+.results-header, .cta {
+  display: inline-block;
+}
+
+.cta {
+  margin-left: 20px;
+}
+
+.panel.done {
+  color: #4f8a10;
+  background-color: #dff2bf;
+  border-color: #4f8a10;
+}
+.panel.pending {
+  color: #9f6000;
+  background-color: #feefb3;
+}
+.panel.fail {
+  color: #d8000c;
+  background-color: #ffbaba;
+  border-color: #d8000c;
+}
