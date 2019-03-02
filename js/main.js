@@ -92,7 +92,9 @@ var data = {
         $resultsHeader.text("Fail.");
         $cta.html("Start again?").show();
         $results.removeClass("pending").addClass("fail");
-        levelCounter = 1;
+
+        // USE TO RESET THE ENTIRE GAME - FOR THIS 1ST TEST WE WONT RESET THE WHOLE GAME
+        // levelCounter = 1;
       }
       // CHECK IF THE LEVEL HAS BEEN COMPLETED
       if ( $results.text().length >= copyText.length ) {
@@ -105,7 +107,9 @@ var data = {
         if ( levels.length <= levelCounter ) {
           // ADD COMPLETED GAME TEXT
           $(".sub-header, .user-input, .panel.callout, .main-header").hide()
-          $resultsHeader.html("<div><h1>Congratulations!</h1><p>You've completed this challenges. You successfully coded the base code needed to build any website.</p><img height='500px' width='500px' src='code.png'></div>").show();
+          $resultsHeader.html("<div><h1>Congratulations!</h1><p>You've completed this challenges. You successfully coded the base code needed to build any website.</p><img height='500px' width='500px' src='img/code.png'></div>").show();
+          // ADD STYLES TO MAIN SECTION
+          $("#main-section").css('text-align', 'center');
           // RESET THE LEVEL COUNTER TO 1
           levelCounter = 1;
         } else { // IF THE LEVEL WAS COMPLETED BUT THE GAME WAS NOT, GO TO NEXT LEVEL
